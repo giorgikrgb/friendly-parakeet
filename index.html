@@ -52,26 +52,38 @@
         </div>
     </section>
       <section id="about" class="about">
-        <div class="container about-container">
-            <div class="about-image">
-                <img src="img2.jpg" alt="About Me">
-            </div>
-            <div class="about-content">
-                <h2>About Me</h2>
-                <p>I'm a passionate frontend web developer with a strong background in creating responsive and user-friendly websites. I have experience working with HTML, CSS, and JavaScript to build modern web applications. I enjoy solving problems and continuously learning new technologies to enhance my skills.</p>
-        
-                <div class="skills">
+    <div class="container about-container">
+
+        <div class="about-image">
+            <img src="img2.jpg" alt="About Me">
+        </div>
+
+        <div class="about-content">
+            <h2>About Me</h2>
+
+            <p>
+                I'm a passionate frontend web developer with a strong
+                background in creating responsive and user-friendly
+                websites. I have experience working with HTML, CSS,
+                and JavaScript to build modern web applications.
+                I enjoy solving problems and continuously learning
+                new technologies to enhance my skills.
+            </p>
+
+            <div class="skills">
+
                 <div class="skill">
-                <div class="skill-title">
-                    <span>html</span>
-                    <span>90%</span>
-                </div>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 90%;"></div>    
-
+                    <div class="skill-title">
+                        <span>HTML</span>
+                        <span>90%</span>
                     </div>
-                 <div class="skill">
 
+                    <div class="progress">
+                        <div class="progress-bar html-bar"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
                     <div class="skill-title">
                         <span>CSS</span>
                         <span>85%</span>
@@ -80,37 +92,46 @@
                     <div class="progress">
                         <div class="progress-bar css-bar"></div>
                     </div>
-
                 </div>
-                    <div class="skill">
+
+                <div class="skill">
                     <div class="skill-title">
                         <span>GitHub</span>
                         <span>70%</span>
                     </div>
+
                     <div class="progress">
                         <div class="progress-bar git-bar"></div>
                     </div>
                 </div>
+
                 <div class="skill">
                     <div class="skill-title">
                         <span>JavaScript</span>
                         <span>80%</span>
                     </div>
+
                     <div class="progress">
                         <div class="progress-bar js-bar"></div>
                     </div>
-                    <div class="skill">
-                 <div class="skill-title">
-                  <span>React</span>
-                 <span>75%</span>
                 </div>
-                <div class="progress">
-                 <div class="progress-bar react-bar"></div>
-                 </div>
-                                </div>
-                        </div>
+
+                <div class="skill">
+                    <div class="skill-title">
+                        <span>React</span>
+                        <span>75%</span>
                     </div>
-      </section>
+
+                    <div class="progress">
+                        <div class="progress-bar react-bar"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
       <section id="service" class="service">
         <div class="container">
             <div class="section-title">
@@ -211,14 +232,25 @@
                     <p>What Clients Say About Me</p>
                 </div>
                <div class="testimonial-box">
-                <img
-                id="testimonial-image"
-                src="img2.jpg"
-                alt="Client Testimonial">   
-                <h3 testimonial-name="John Doe">John Doe</h3>
-                <h4 testimonial-position="CEO, Company">CEO, Company</h4>
-                <p testimonial-text="Giorgi is an exceptional frontend developer who delivered a fantastic website for our company. He was responsive, professional, and exceeded our expectations. Highly recommended!">Giorgi is an exceptional frontend developer who delivered a fantastic website for our company. He was responsive, professional, and exceeded our expectations. Highly recommended!</p>     
-               </div>
+
+    <img
+        id="testimonial-image"
+        src="img2.jpg"
+        alt="Client Testimonial"
+    >
+
+    <h3 id="testimonial-name">John Doe</h3>
+
+    <h4 id="testimonial-job">CEO, Company</h4>
+
+    <p id="testimonial-text">
+        Giorgi is an exceptional frontend developer who delivered
+        a fantastic website for our company. He was responsive,
+        professional, and exceeded our expectations.
+        Highly recommended!
+    </p>
+
+</div>
                <div class="testimonial-buttons">
                   <button class="testimonial-btn" data-slide="0"></button>
 
@@ -239,24 +271,56 @@
                     <h2>Contact Me</h2>
                     <p>Get in Touch</p>
                 </div>
-                <form class="contact-form">
-                    <input type="text" name="name" placeholder="your name" required>
-                    <input type="email" name="email" placeholder="your email" required>
-                    <input type="text" name="website" placeholder="your website" required>
-                    <textarea name="message" placeholder="Message" rows="6" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
+                <form id="contact-form" class="contact-form">
+
+    <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+    >
+
+    <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required
+    >
+
+    <input
+        type="text"
+        name="website"
+        placeholder="Your Website"
+        required
+    >
+
+    <textarea
+        name="message"
+        placeholder="Message"
+        rows="6"
+        required
+    ></textarea>
+
+    <button type="submit">
+        Send Message
+    </button>
+
+</form>
             </div>
         </section>
         <section id="modal" class="modal">
-            <div class="modal-content">
-                <h3>Contact Information</h3>
-                <p> we appreciate your interest in contacting us. Please fill out the form below and we will get back to you as soon as possible.
-               </p>
-                <button id="close-modal">Close</button>
-            </div>
-            </div>
-        </section>
+    <div class="modal-content">
+        <h3>Contact Information</h3>
+
+        <p>
+            We appreciate your interest in contacting us.
+            Please fill out the form below and we will get back
+            to you as soon as possible.
+        </p>
+
+        <button id="close-modal">Close</button>
+    </div>
+</section>
         <footer class="footer">
             <div class="container">
                 <h2>Giorgi Kalabegashvili</h2>
@@ -277,8 +341,5 @@
             </div>
         </footer>
         <script src="app.js"></script>
-</body>
-</body>
-
 </body>
 </html>
