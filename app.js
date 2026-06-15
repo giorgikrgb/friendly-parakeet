@@ -80,3 +80,71 @@ filterButtons.forEach(button => {
     });
 
 });
+const testimonials = [
+
+{
+    image: "img1.jpg",
+    name: "John Smith",
+    job: "Web Designer",
+    text: "Excellent developer and great communication skills."
+},
+
+{
+    image: "img2.jpg",
+    name: "Sarah Johnson",
+    job: "Project Manager",
+    text: "Very responsible and easy to work with."
+},
+
+{
+    image: "logo.jpg",
+    name: "Michael Brown",
+    job: "UI Designer",
+    text: "Creative and professional developer."
+},
+
+{
+    image: "logo1.jpg",
+    name: "Emma Wilson",
+    job: "Business Owner",
+    text: "Delivered the project on time and exceeded expectations."
+}
+
+];
+
+const testimonialButtons =
+document.querySelectorAll(".testimonial-btn");
+
+const testimonialImage =
+document.getElementById("testimonial-image");
+
+const testimonialName =
+document.getElementById("testimonial-name");
+
+const testimonialJob =
+document.getElementById("testimonial-job");
+
+const testimonialText =
+document.getElementById("testimonial-text");
+
+testimonialButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const index = button.dataset.slide;
+
+        testimonialImage.src =
+        testimonials[index].image;
+
+        testimonialName.textContent =
+        testimonials[index].name;
+
+        testimonialJob.textContent =
+        testimonials[index].job;
+
+        testimonialText.textContent =
+        testimonials[index].text;
+
+    });
+
+});
