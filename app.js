@@ -148,3 +148,69 @@ testimonialButtons.forEach(button => {
     });
 
 });
+const form =
+document.getElementById("contact-form");
+
+const modal =
+document.getElementById("modal");
+
+const closeModal =
+document.getElementById("close-modal");
+
+form.addEventListener("submit", async (e) => {
+
+    e.preventDefault();
+
+    const formData = {
+
+        name: form.name.value,
+        email: form.email.value,
+        website: form.website.value,
+        message: form.message.value
+
+    };
+
+    try {
+
+        const response = await fetch(
+            "https://jsonplaceholder.typicode.com/users",
+            {
+                method: "POST",
+
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify(formData)
+            }
+        );
+
+        if (response.ok) {
+
+            modal.classList.add("show");
+
+            form.reset();
+
+        }
+
+    } catch (error) {
+
+        console.error(error);
+
+    }
+
+});
+closeModal.addEventListener("click", () => {
+
+    modal.classList.remove("show");
+
+});
+window.addEventListener("click", (e) => {
+
+    if (e.target === modal) {
+
+        modal.classList.remove("show");
+
+    }
+
+});
